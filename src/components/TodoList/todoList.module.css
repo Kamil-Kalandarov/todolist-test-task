@@ -1,0 +1,206 @@
+.todoList {
+  max-width: 600px;
+  background-color: #F5F5F5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20px 20px;
+}
+
+.todoList__container {
+  background-color: #FEFEFE;
+  width: 100%;
+  padding: 0 5px;
+}
+
+.todoList__submitContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.todoList__addTaskBtn {
+  height: 40px;
+  font-size: 15px;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0px 0px 27px 23px rgba(41, 187, 187, 0.2) inset;
+  border-radius: 50%;
+}
+
+.todoList__addTaskBtn:hover{
+  background-color: aquamarine;
+}
+
+.todoList__errorMessage {
+  color: red;
+  font-size: 15px;
+}
+
+.todoList__inputContainer {
+  width: 100%;
+  position: relative;
+  padding-top: 25px;
+}
+
+.todoList__input {
+  width: 100%;
+  outline: 0;
+  border: 0;
+  border-bottom: 2px solid #999999;
+  padding: 10px 0;
+  background: transparent;
+  transition: 0.3s ease;
+  font-size: 17px;
+  padding: 0;
+}
+
+.todoList__input_error {
+  width: 100%;
+  outline: 0;
+  border: 0;
+  border-bottom: 2px solid red;
+  padding: 10px 0;
+  background: transparent;
+  transition: 0.3s ease;
+  font-size: 17px;
+  padding: 0;
+}
+
+.todoList__inputLabel {
+  display: block;
+  position: absolute;
+  top: 0;
+  color: #999999;
+  text-transform: uppercase;
+  transition: 0.3s ease;
+  font-size: 17px;
+}
+
+.todoList__input::placeholder {
+  color: white;
+}
+
+.todoList__input_error::placeholder {
+  color: white;
+}
+
+.todoList__input:placeholder-shown ~ .todoList__inputLabel {
+  font-size: 17px;
+  top: 20px;
+}
+
+.todoList__input_error:placeholder-shown ~ .todoList__inputLabel {
+  font-size: 17px;
+  top: 20px;
+}
+
+.todoList__input:focus {
+  border-image-slice: 1;
+}
+
+.todoList__input:focus ~ .todoList__inputLabel {
+  display: block;
+  position: absolute;
+  top: 0;
+  font-size: 17px;
+}
+
+.todoList__list {
+  max-width: 100%;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+}
+
+.todoList__item {
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #999999;
+}
+
+.todoList__removeTaskBtn {
+  width: 20px;
+  height: 20px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  background-image: url('../../images/trash-icon.svg');
+  background-repeat: no-repeat;
+}
+
+.todoList__removeTaskBtn:hover {
+  opacity: 50%;
+}
+
+.todoList__task {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  word-break: break-all;
+  max-width: 300px;
+}
+
+.todoList__taskText_complited {
+  opacity: 50%;
+  text-decoration: line-through;
+}
+
+.todoList__checkbox {
+  -webkit-appearance: none;
+  background: transparent;
+	padding: 12px;
+  border: 1px solid #999999;
+	border-radius: 50%;
+	position: relative;
+  margin: 0;
+}
+
+.todoList__checkbox:checked {
+  background-color: #e9ecee;
+	border: 1px solid #adb8c0;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1);
+	color: #99a1a7;
+}
+
+.todoList__checkbox:checked::after {
+  content: '\2714';
+	font-size: 25px;
+	position: absolute;
+  top: 1px;
+  right: 0;
+	color: green;
+}
+
+.todoList__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.todoList__removeCompletedBtn {
+  height: 30px;
+  background: transparent;
+  border: none;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  text-align: center;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+}
+
+.todoList__removeCompletedBtn:hover {
+  opacity: 50%;
+}
