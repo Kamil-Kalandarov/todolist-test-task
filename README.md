@@ -28,7 +28,7 @@
   ```
 - организуйте свое расписание
 
-## <a name="demo-link">**ссылка на Demo проекта** [Stellar Burger](https://kamil-kalandarov.github.io/todolist-test-task/)</a>
+## <a name="demo-link">**ссылка на Demo проекта** [TosoList](https://kamil-kalandarov.github.io/todolist-test-task/)</a>
 
 ## <a name='contacts'>**Мои контакты:**</a>
 [<img src="https://img.shields.io/badge/Telegram-696969?style=for-the-badge&logo=Telegram&logoColor=#F7DF1E">](https://t.me/Kamil_Kalandarov) 
